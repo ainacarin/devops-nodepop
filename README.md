@@ -5,7 +5,7 @@
 
 ## **Parte 1** - Servicio mediante **DNS**
 
-#### **Se puede acceder a través de este [enlace dns](ec2-50-19-115-178.compute-1.amazonaws.com)**
+#### **Se puede acceder a través de este enlace dns ec2-50-19-115-178.compute-1.amazonaws.com**
 
 La funcionalidad de esta parte es principalmente un *API* para el mantenimiento y creación de anuncios de compra o venta de artículos. Además, permite buscar a través de filtros por varios criterios. Como complemento, se pueden visualizar los anuncios a través del navegador, función presentada como *web*.
 
@@ -46,7 +46,7 @@ Desde la aplicación de peticiones (*Postman*), las rutas para las diferentes op
     *- password: 1234*
     Esta operación se requiere realizar previamente para poder obtener el *listado de anuncios mediante API*, la cual devuelve un *token* que será añadido en la cabecera con la propiedad *Authorization* al realizar la petición mencionada.
 1. **Listado de anuncios**: tipo *GET* a *ec2-50-19-115-178.compute-1.amazonaws.com/api/advertisements*
-    Los filtros se añaden conforme al apartado *2.3.* a partir de la ruta *[ec2-50-19-115-178.compute-1.amazonaws.com/api/advertisements?](ec2-50-19-115-178.compute-1.amazonaws.com/api/advertisements?)*.
+    Los filtros se añaden conforme al apartado *2.3.* a partir de la ruta *ec2-50-19-115-178.compute-1.amazonaws.com/api/advertisements?*.
     Para esta petición se requiere estar autenticado previamente, según se describe en el punto *2.2.0*
 2. **Listado de tags**: tipo *GET* a *ec2-50-19-115-178.compute-1.amazonaws.com/api/tags*
 3. **Creación de anuncio**: tipo *POST* a *ec2-50-19-115-178.compute-1.amazonaws.com/api/advertisements*, añadiendo todos 
@@ -85,12 +85,12 @@ Un **ejemplo** de obtención de listados de anuncios con varios filtros, para ca
 El listado obtenido estaría paginado y para el caso de ejemplo, correspondería con la primera página, en la que se mostraría un total de 2 anuncios (si los hubiera), con el o los tags deseados (separados por espacios), que se venden, con un nombre que empiece por *tab*, con un precio mínimo de 50 euros y ordenados por precio.
 
 #### **4. Repositorio**
-El servicio desplegado es el que se encuentra disponible en [este enlace](github.com/ainacarin/nodepop-pro).
+El servicio desplegado es el que se encuentra disponible en *github.com/ainacarin/nodepop-pro*.
 
 
 ## **Parte 2** - Servicio mediante **IP**
 
-#### **Se puede acceder a través de este [enlace ip](50.19.115.178)**
+#### **Se puede acceder a través de esta ip 50.19.115.178**
 
 La funcionalidad de esta parte es principalmente una *web* a la que se accede a través de una página de *login* y que después de acceder, ofrece un listado de anuncios y además, permite filtrar anuncios conforme a varios criterios, ver el detalle de cada anuncio, crear un nuevo anuncio, borrar un anuncio y para finalizar la sesión, un *logout*.
 *Para acceder, se ofrece un usuario por defecto cuyos valores son:*
@@ -99,7 +99,7 @@ La funcionalidad de esta parte es principalmente una *web* a la que se accede a 
 
 #### **1. Repositorios**
 El servicio desplegado está compuesto de dos partes:
-- **Parte *Frontend***: disponible en [este enlace](github.com/davidjj76/nodepop-react/tree/redux).
-- **Parte *Backend***: disponible en [este enlace](github.com/davidjj76/nodepop-api).
+- **Parte *Frontend***: disponible en *github.com/davidjj76/nodepop-react/tree/redux*.
+- **Parte *Backend***: disponible en *github.com/davidjj76/nodepop-api*.
 
 *La web se presenta con un objetivo funcional, sin diseño asociado.*
